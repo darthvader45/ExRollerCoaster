@@ -1,0 +1,34 @@
+run/
+.gradle/
+build/
+gradle-app.setting
+
+## IntelliJ IDEA
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+*.iws
+*.ipr
+
+## Eclipse
+
+eclipse/
+*.pydevproject
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+
+SUSHI.jpg
