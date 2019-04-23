@@ -297,25 +297,17 @@ public abstract class TileEntityRail extends TileEntity implements IRailControll
 		px = tag.getInteger("px");
 		py = tag.getInteger("py");
 		pz = tag.getInteger("pz");
-        IRail prev = GetRail(px, py, pz);
-		if(prev != null) rail.SetPrevRail(prev);
-		else{
-            lazyRunner.add(() -> {
-            	rail.SetPrevRail(GetRail(px, py, pz));
-				rail.ConstructCurve();
-			});
-        }
+		lazyRunner.add(() -> {
+			rail.SetPrevRail(GetRail(px, py, pz));
+			rail.ConstructCurve();
+		});
 		nx = tag.getInteger("nx");
 		ny = tag.getInteger("ny");
 		nz = tag.getInteger("nz");
-		IRail next = GetRail(nx, ny, nz);
-		if(next != null) rail.SetNextRail(next);
-		else {
-            lazyRunner.add(() -> {
-            	rail.SetNextRail(GetRail(nx, ny, nz));
-				rail.ConstructCurve();
-			});
-        }
+		lazyRunner.add(() -> {
+			rail.SetNextRail(GetRail(nx, ny, nz));
+			rail.ConstructCurve();
+		});
 
 		rail.ForceDirty();
 		rail.ConstructCurve();
