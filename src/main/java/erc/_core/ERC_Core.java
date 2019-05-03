@@ -78,6 +78,7 @@ public class ERC_Core {
 	public static Item ItemSUSHI = new itemSUSHI();
 	public static Item ItemStick = new ERC_ItemWrenchPlaceBlock();
 	public static Item ItemSmoothAll = new ERC_ItemSmoothAll();
+	public static Item itemEntryTicket = new itemEntryTicket();
 	
 	//GUI/////////////////////////////////////////
 	@Mod.Instance(ERC_Core.MODID)
