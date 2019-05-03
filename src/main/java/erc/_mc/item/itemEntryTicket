@@ -9,5 +9,7 @@ public class itemEntryTicket extends Item
     public class itemEntryTicket()
     {
       setCreativeTab(ERC_Core.ERC_Tab)
+      setUnlocalizedName("entryTicket")
+      setRegistryName(ERC_Core.modid + "entryTicket")
     }
 }
